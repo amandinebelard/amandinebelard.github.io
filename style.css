@@ -30,5 +30,11 @@ section {
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 1.5rem; /* Add some space below the image on mobile */
+    }
+
+    .portrait-container img {
+        width: 150px; /* Adjust size for mobile */
+        height: 150px; /* Adjust size for mobile */
     }
 }
