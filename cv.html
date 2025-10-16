@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amandine Belard | CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-semibold text-gray-900">
+                <a href="index.html">Amandine Belard</a>
+            </div>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="nav-link text-gray-600 font-medium">Home</a></li>
+                <li><a href="research.html" class="nav-link text-gray-600 font-medium">Research</a></li>
+                <li><a href="cv.html" class="nav-link text-gray-600 font-medium">CV</a></li>
+                <li><a href="fieldwork-gallery.html" class="nav-link text-gray-600 font-medium">Fieldwork Gallery</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 font-medium">Home</a>
+            <a href="research.html" class="block py-2 text-gray-600 font-medium">Research</a>
+            <a href="cv.html" class="block py-2 text-gray-600 font-medium">CV</a>
+            <a href="fieldwork-gallery.html" class="block py-2 text-gray-600 font-medium">Fieldwork Gallery</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+        <section id="cv-details" class="py-20 md:py-24">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-12 text-center">Curriculum Vitae</h2>
+
+                <!-- CV Download Button -->
+                <div class="text-center mb-16">
+                    <a href="CV_Amandine_Belard.pdf" class="bg-blue-800 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-blue-900 transition-all" download>
+                        Download Full CV (PDF)
+                    </a>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Grants -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-6">Grants</h3>
+                        <div class="publication-item">
+                            <p class="text-sm text-gray-700 leading-relaxed"><strong>International Growth Centre (IGC)—Risk Preferences and Adoption of Sustainable Agricultural Practices: Insights from Smallholder Farmers in Zambia.</strong></p>
+                            <p class="text-sm text-gray-600">Competitive research grant, March 2025 – September 2026. Role: Principal Investigator. Amount awarded: £40,000.</p>
+                        </div>
+                    </div>
+
+                    <!-- Conferences -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-6">Conference Presentations</h3>
+                        <div class="publication-item">
+                            <p class="text-sm text-gray-700 leading-relaxed"><strong>“They know each other, but do they trust each other? Social capital and selected beneficiaries of community-based development projects”</strong></p>
+                            <p class="text-sm text-gray-600">13th Conference of the French Association of Experimental Economics (ASFEE), Montpellier, France, May 25–26, 2023.</p>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-sm text-gray-700 leading-relaxed"><strong>(Same paper)</strong></p>
+                            <p class="text-sm text-gray-600">Economic Science Association (ESA) Africa Regional Conference, University of Cape Town (UCT), South Africa, December 14–15, 2023.</p>
+                        </div>
+                    </div>
+
+                    <!-- Research Stays -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-6">Research Stays</h3>
+                        <div class="publication-item">
+                            <p class="text-sm text-gray-700 leading-relaxed"><strong>University of Pretoria</strong> (2024)</p>
+                            <p class="text-sm text-gray-600">Department of Agricultural Economics, Extension, and Rural Development Faculty of Natural & Agricultural Sciences</p>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-sm text-gray-700 leading-relaxed"><strong>University of Zimbabwe</strong> (2022–2024)</p>
+                            <p class="text-sm text-gray-600">Agricultural Business Development and Economics Department</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto text-center">
+            <p>Last updated: October 14, 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

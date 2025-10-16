@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amandine Belard | Academic Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-semibold text-gray-900">
+                <a href="index.html">Amandine Belard</a>
+            </div>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="nav-link text-gray-600 font-medium">Home</a></li>
+                <li><a href="research.html" class="nav-link text-gray-600 font-medium">Research</a></li>
+                <li><a href="cv.html" class="nav-link text-gray-600 font-medium">CV</a></li>
+                <li><a href="fieldwork-gallery.html" class="nav-link text-gray-600 font-medium">Fieldwork Gallery</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 font-medium">Home</a>
+            <a href="research.html" class="block py-2 text-gray-600 font-medium">Research</a>
+            <a href="cv.html" class="block py-2 text-gray-600 font-medium">CV</a>
+            <a href="fieldwork-gallery.html" class="block py-2 text-gray-600 font-medium">Fieldwork Gallery</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="py-20 md:py-28">
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-start text-center md:text-left">
+                <div class="mt-8 md:mt-0 md:w-1/4 flex-shrink-0">
+                    <img src="portrait.jpg" alt="Professional Headshot of Amandine Belard" class="rounded-full w-64 h-64 object-cover mx-auto shadow-lg">
+                </div>
+                <div class="md:w-3/4 md:pl-12">
+                    <p class="text-lg md:text-xl text-gray-600 mb-6">Welcome!</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-8">
+                    My research interests lie at the intersection of development, behavioral, and environmental economics. I am interested in how climate change affects economic decision-making and livelihoods in vulnerable settings, and in exploring mechanisms that support transitions toward sustainability.
+
+                    </p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-8">
+                    My PhD research examines how smallholder farmers adopt sustainable agricultural practices and how collective action and social capital can be leveraged to foster environmental and economic sustainability using surveys and experimental methods (discrete choice experiments and lab-in-the-fields). I have implemented and lead fieldwork in Senegal, Zimbabwe, and Nigeria.
+
+                    </p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-8">
+                        I completed my Ph.D. in Economics in June 2025 from <a href="https://en.institut-agro-montpellier.fr/research/phd-programme-montpellier-supagro" target="_blank" class="text-blue-700 hover:underline">L'Institut Agro</a> in France. 
+                        My dissertation, supervised by Dr. Damien Jourdain and Dr. Françoise Gérard, was conducted within <a href="https://www.cirad.fr/en" target="_blank" class="text-blue-700 hover:underline">CIRAD</a> as part of the EU-funded <a href="https://raiz.org.zw" target="_blank" class="text-blue-700 hover:underline">Resilience Building for Agroecological Intensification in Zimbabwe</a> project. 
+                        I hold a Master's degree in Public Policy and Development from the <a href="https://www.tse-fr.eu" target="_blank" class="text-blue-700 hover:underline">Toulouse School of Economics</a>.
+                    </p>
+                    <div class="flex items-center text-gray-600 mb-2">
+                        <i data-feather="mail" class="w-5 h-5 mr-2 text-blue-700"></i>
+                        <a href="mailto:amandine.belard1@gmail.com" class="text-blue-700 hover:underline">Contact me</a>
+                    </div>
+                    <div class="flex items-center text-gray-600">
+                        <i data-feather="linkedin" class="w-5 h-5 mr-2 text-blue-700"></i>
+                        <a href="https://www.linkedin.com/in/abelard/" target="_blank" class="text-blue-700 hover:underline">Linkedin profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto text-center">
+            <p>Last updated: October 14, 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Feather icons
+        feather.replace();
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; 
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+/* Simple animation for section fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+section {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+.nav-link {
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #1e3a8a; /* Dark Blue */
+}
+.publication-item {
+    border-left: 3px solid #dbeafe; /* Light Blue */
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
